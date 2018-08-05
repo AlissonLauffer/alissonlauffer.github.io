@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans';
 }
 
 hr {
@@ -20,13 +20,28 @@ hr.light {
 
 a {
   color: #4285F4;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
 
 a:hover {
   color: #4285F4;
+}
+
+.projects a {
+  color: #000;
+  text-decoration: none;
+}
+
+.projects img {
+  border-radius: 50%;
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.projects div {
+  border-radius: 50%;
 }
 
 h1,
