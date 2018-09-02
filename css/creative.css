@@ -29,17 +29,13 @@ a:hover {
 
 .projects a {
   color: #000;
-  text-decoration: 0;
+  text-decoration: none;
 }
 
 .projects img {
   border-radius: 50%;
   width: 160px;
   margin-bottom: 15px;
-}
-
-.projects div {
-  border-radius: 50%;
 }
 
 h1,
