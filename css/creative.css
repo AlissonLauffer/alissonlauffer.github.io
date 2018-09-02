@@ -20,8 +20,6 @@ hr.light {
 
 a {
   color: #ff7043;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -31,7 +29,7 @@ a:hover {
 
 .projects a {
   color: #000;
-  text-decoration: none;
+  text-decoration: 0;
 }
 
 .projects img {
@@ -73,12 +71,6 @@ section {
   margin-top: 0;
 }
 
-::-moz-selection {
-  color: #fff;
-  background: #ff5722;
-  text-shadow: none;
-}
-
 ::selection {
   color: #fff;
   background: #ff5722;
@@ -90,17 +82,10 @@ img::selection {
   background: transparent;
 }
 
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
-}
-
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -188,9 +173,6 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
