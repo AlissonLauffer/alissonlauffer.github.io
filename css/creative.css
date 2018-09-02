@@ -11,7 +11,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #4285F4;
+  border-color: #ff5722;
 }
 
 hr.light {
@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #4285F4;
+  color: #ff5722;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 a:hover {
-  color: #4285F4;
+  color: #ff5722;
 }
 
 .projects a {
@@ -54,11 +54,11 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #4285F4 !important;
+  background-color: #ff5722 !important;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #b23c17 !important;
 }
 
 .text-faded {
@@ -75,13 +75,13 @@ section {
 
 ::-moz-selection {
   color: #fff;
-  background: #212529;
+  background: #b23c17;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #212529;
+  background: #b23c17;
   text-shadow: none;
 }
 
@@ -107,12 +107,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #4285F4;
+  color: #ff5722;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #4285F4;
+  color: #ff5722;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -125,12 +125,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #4285F4;
+  color: #ff5722;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #4285F4 !important;
+  color: #ff5722 !important;
   background-color: transparent;
 }
 
@@ -166,10 +166,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #4285F4;
+    color: #ff5722;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #4285F4;
+    color: #ff5722;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -177,7 +177,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #4285F4;
+    color: #ff5722;
   }
 }
 
@@ -236,7 +236,7 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #4285F4 !important;
+  color: #ff5722 !important;
 }
 
 .btn {
@@ -252,13 +252,13 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #4285F4;
-  border-color: #4285F4;
+  background-color: #ff5722;
+  border-color: #ff5722;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #2265D4 !important;
+  background-color: #b23c17 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
