@@ -28,8 +28,12 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $("#mainNav").removeClass("hide-navbar-shadow");
+      $("#mainNav").removeClass("more-spaced");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").addClass("hide-navbar-shadow");
+      $("#mainNav").addClass("more-spaced");
     }
   };
   // Collapse now if page is not at top
