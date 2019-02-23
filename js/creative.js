@@ -11,6 +11,12 @@
       }, 1000, "easeInOutExpo");
       return false;
     }
+    else {
+      $('html, body').animate({
+        scrollTop: (-56)
+      }, 1000, "easeInOutExpo");
+      return false;
+    }
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
