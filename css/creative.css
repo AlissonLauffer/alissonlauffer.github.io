@@ -25,6 +25,12 @@ a {
 .projects a {
   color: #000;
   text-decoration: none;
+  outline: none;
+}
+
+.projects div {
+  border-radius: 5%;
+  padding: 5px;
 }
 
 .projects img {
