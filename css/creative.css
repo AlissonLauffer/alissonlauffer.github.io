@@ -19,7 +19,7 @@ hr.light {
 }
 
 a {
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .projects a {
@@ -80,11 +80,11 @@ img::selection {
   padding-bottom: 15px;
   padding-right: 50px;
   padding-left: 50px;
-  transition: all 0.5s !important;
+  transition: all 0.3s !important;
 }
 
 .navbar-shrink {
-  transition: all 0.5s !important;
+  transition: all 0.3s !important;
 }
 
 #mainNav {
@@ -110,12 +110,12 @@ img::selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #4285f4;
+  color: #1a73e8;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #4285f4 !important;
+  color: #1a73e8 !important;
   background-color: transparent;
 }
 
@@ -154,7 +154,7 @@ img::selection {
     color: #555;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #4285f4;
+    color: #1a73e8;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -162,8 +162,12 @@ img::selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #4285f4;
+    color: #1a73e8;
   }
+}
+
+.navbar {
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,.20),0 2px 7px 0 rgba(0,0,0,.10) !important;
 }
 
 .hide-navbar-shadow {
