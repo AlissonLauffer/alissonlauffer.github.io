@@ -40,7 +40,6 @@ document.getElementById("my-age").innerHTML = calculate_age(new Date(2002, 05, 1
 
   // Collapse Navbar
   var navbarCollapse = function() {
-
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $("#mainNav").removeClass("hide-navbar-shadow");
