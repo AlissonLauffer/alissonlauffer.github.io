@@ -1,8 +1,8 @@
 function calculate_age(dob) {
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms);
+  var diff_ms = Date.now() - dob.getTime();
+  var age_dt = new Date(diff_ms);
 
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
+  return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
 document.getElementById("my-age").innerHTML = calculate_age(new Date(2002, 05, 16));
@@ -19,8 +19,7 @@ document.getElementById("my-age").innerHTML = calculate_age(new Date(2002, 05, 1
         scrollTop: (target.offset().top - 56)
       }, 1500, "easeInOutExpo");
       return false;
-    }
-    else {
+    } else {
       $('html, body').animate({
         scrollTop: (0)
       }, 1500, "easeInOutExpo");
