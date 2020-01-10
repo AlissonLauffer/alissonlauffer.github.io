@@ -1,0 +1,54 @@
+body {
+  background-color: #090909;
+  color: #dddddd;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.maintext {
+  font-size: 4em;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.social-networks > * {
+  font-size: 1.75em;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+  color: #999999;
+}
+
+.main-section {
+  min-height: 100vh;
+}
+
+.main-section > div.content {
+  text-align: center;
+  padding-top: 35vh;
+}
+
+div#bottom {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+
+div#bottom > span {
+  font-size: 15pt;
+  text-decoration: none;
+}
