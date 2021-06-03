@@ -28,7 +28,12 @@ body {
 }
 
 a {
-  color: #999999;
+  transition: all .5s;
+  color: #999;
+}
+
+a:hover {
+  color: #BBB;
 }
 
 .main-section {
