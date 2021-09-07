@@ -1,17 +1,18 @@
-window.onscroll = function(){
-  var pos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+window.addEventListener("scroll", function(){
+  let pos = window.pageYOffset;
+
   if (pos > 200){
     document.getElementById("bottom").classList.add("invisible");
   }
   else {
     document.getElementById("bottom").classList.remove("invisible");
   }
-}
+});
 
 function calculateAge(dob) {
   let now = new Date();
 
-  var years = (now.getFullYear() - dob.getFullYear());
+  let years = (now.getFullYear() - dob.getFullYear());
 
   if (now.getMonth() < dob.getMonth() || now.getMonth() == dob.getMonth() && now.getDate() < dob.getDate()) {
     years--;
