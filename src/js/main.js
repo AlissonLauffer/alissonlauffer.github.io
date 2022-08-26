@@ -1,7 +1,10 @@
-window.addEventListener("scroll", function(){
+import "./faIcons.js";
+
+
+window.addEventListener("scroll", function () {
   let pos = window.pageYOffset;
 
-  if (pos > 200){
+  if (pos > 200) {
     document.getElementById("bottom").classList.add("invisible");
   }
   else {
