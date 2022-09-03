@@ -1,16 +1,19 @@
 import "./faIcons.js";
 
 
-window.addEventListener("scroll", function () {
-  let pos = window.pageYOffset;
+window.addEventListener("scroll", () => {
+  let pos = window.scrollY;
 
   if (pos > 200) {
     document.getElementById("bottom").classList.add("invisible");
-  }
-  else {
+  } else {
     document.getElementById("bottom").classList.remove("invisible");
   }
 });
+
+
+document.getElementById("year").innerText = new Date().getFullYear().toString();
+
 
 function calculateAge(dob) {
   let now = new Date();
