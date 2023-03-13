@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alissonlauffer/my-website#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "html-loader": "^4.2.0",
