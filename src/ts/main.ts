@@ -10,9 +10,9 @@ window.addEventListener("scroll", () => {
   let pos = window.scrollY;
 
   if (pos > 200) {
-    bottom?.classList.add("invisible");
+    bottom.classList.add("invisible");
   } else {
-    bottom?.classList.remove("invisible");
+    bottom.classList.remove("invisible");
   }
 });
 
