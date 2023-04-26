@@ -5,14 +5,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
-
-
-const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
 const config = {
   entry: {
-    main: ["./src/js/main.js", "./src/css/main.css"]
+    main: ["./src/ts/main.ts", "./src/scss/main.scss"]
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -34,6 +30,7 @@ const config = {
       chunks: ["main"],
       scriptLoading: "blocking",
     }),
+    new MiniCssExtractPlugin(),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
@@ -45,8 +42,13 @@ const config = {
         loader: "html-loader",
       },
       {
-        test: /\.css$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader"],
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
 
       // Add your rules for custom modules here
@@ -58,13 +60,14 @@ const config = {
   },
 };
 
-module.exports = () => {
-  if (isProduction) {
-    config.mode = "production";
-
-    config.plugins.push(new MiniCssExtractPlugin());
-  } else {
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
     config.mode = "development";
   }
+
+  if (argv.mode === 'production') {
+    config.mode = "production";
+  }
+
   return config;
 };
