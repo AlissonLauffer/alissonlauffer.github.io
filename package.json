@@ -24,7 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.15",
     "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^4.2.2",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
@@ -38,7 +38,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@fontsource/abeezee": "^4.5.10",
+    "@fontsource/abeezee": "^5.0.8",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2"
   }
