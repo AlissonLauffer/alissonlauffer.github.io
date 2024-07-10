@@ -1,14 +1,15 @@
 {
   "name": "alisson-website",
+  "type": "module",
   "version": "1.0.0",
   "description": "Alisson's website",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "repository": {
     "type": "git",
@@ -21,25 +22,12 @@
     "url": "https://github.com/alissonlauffer/my-website/issues"
   },
   "homepage": "https://github.com/alissonlauffer/my-website#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.15",
-    "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^4.2.2",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.3",
-    "mini-css-extract-plugin": "^2.7.6",
-    "postcss-loader": "^7.3.3",
-    "sass": "^1.66.1",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "ts-loader": "^9.4.4",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  },
   "dependencies": {
-    "@fontsource/abeezee": "^4.5.10",
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-brands-svg-icons": "^6.4.2"
+    "@astrojs/check": "^0.8.1",
+    "@fontsource/abeezee": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "astro": "^4.11.5",
+    "typescript": "^5.5.3"
   }
 }

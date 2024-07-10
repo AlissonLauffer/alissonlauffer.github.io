@@ -1,0 +1,205 @@
+---
+import "@fontsource/abeezee";
+---
+
+<script>
+  import { library, dom } from "@fortawesome/fontawesome-svg-core";
+  import {
+    faGithub,
+    faGitlab,
+    faLinkedin,
+    faStackOverflow,
+    faTelegram,
+    faXTwitter,
+  } from "@fortawesome/free-brands-svg-icons";
+
+  library.add(
+    faGithub,
+    faGitlab,
+    faLinkedin,
+    faStackOverflow,
+    faTelegram,
+    faXTwitter,
+  );
+
+  dom.i2svg();
+
+  let bottom = document.getElementById("bottom");
+
+  let yearSpan = document.getElementById("year");
+  let ageSpan = document.getElementById("my-age");
+
+  window.addEventListener("scroll", () => {
+    let pos = window.scrollY;
+
+    if (pos > 200) {
+      bottom?.classList.add("invisible");
+    } else {
+      bottom?.classList.remove("invisible");
+    }
+  });
+
+  if (yearSpan) {
+    yearSpan.innerText = new Date().getFullYear().toString();
+  }
+
+  function calculateAge(dob: Date) {
+    let now = new Date();
+
+    let years = now.getFullYear() - dob.getFullYear();
+
+    if (
+      now.getMonth() < dob.getMonth() ||
+      (now.getMonth() == dob.getMonth() && now.getDate() < dob.getDate())
+    ) {
+      years--;
+    }
+
+    return years;
+  }
+
+  if (ageSpan) {
+    ageSpan.innerText = calculateAge(new Date(2002, 4, 16)).toString(); // My real birthday is 2002/05/16, but JavaScript count months from 0...
+  }
+</script>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Alisson's website</title>
+  </head>
+
+  <body id="main">
+    <section class="main-section">
+      <div class="content">
+        <span class="maintext">Hello,<br />my name is Alisson.</span>
+        <p class="social-networks">
+          <a
+            title="GitHub"
+            target="_blank"
+            href="https://github.com/alissonlauffer"
+            ><i class="fab fa-github"></i></a
+          >
+          <a
+            title="GitLab"
+            target="_blank"
+            href="https://gitlab.com/alissonlauffer"
+            ><i class="fab fa-gitlab"></i></a
+          >
+          <a
+            title="LinkedIn"
+            target="_blank"
+            href="https://www.linkedin.com/in/alisson-lauffer-bb8645231"
+            ><i class="fab fa-linkedin"></i></a
+          >
+          <a
+            title="Stack Overflow"
+            target="_blank"
+            href="https://stackoverflow.com/users/9728342/alisson-lauffer"
+            ><i class="fab fa-stack-overflow"></i></a
+          >
+          <a title="Telegram" target="_blank" href="https://t.me/alissonlauffer"
+            ><i class="fab fa-telegram"></i></a
+          >
+          <a title="X" target="_blank" href="https://twitter.com/alissonlauffer"
+            ><i class="fab fa-x-twitter"></i></a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="container main-section" id="second">
+      <div class="content">
+        <h1>
+          My name is Alisson Lauffer. I'm <span id="my-age">21</span> years old and
+          who likes to develop in Python, JavaScript, <s>PHP</s> and other langs.
+        </h1>
+        <p>
+          Most of my projects are available over <a
+            target="_blank"
+            href="https://amanoteam.com">Amano Team</a
+          >. Take a look on it.
+        </p>
+      </div>
+    </section>
+
+    <div id="bottom">
+      <a href="#second">Scroll down to see more</a>
+    </div>
+
+    <footer>
+      <div class="container">
+        &copy; <span id="year">2023</span> Alisson Lauffer.
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #090909;
+    color: #dddddd;
+    margin: 0;
+    font-family: "ABeeZee", sans-serif;
+  }
+
+  .invisible {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .maintext {
+    font-size: 4em;
+  }
+
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .social-networks > * {
+    font-size: 1.75em;
+    text-decoration-line: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  a {
+    transition: all 0.5s;
+    color: #999;
+  }
+
+  a:hover {
+    color: #bbb;
+  }
+
+  .main-section {
+    min-height: 100vh;
+  }
+
+  .main-section > div.content {
+    text-align: center;
+    padding-top: 35vh;
+  }
+
+  div#bottom {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    transition: all 0.5s;
+  }
+
+  div#bottom > a {
+    font-size: 15pt;
+    text-decoration-line: none;
+  }
+</style>
