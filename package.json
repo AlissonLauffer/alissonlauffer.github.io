@@ -28,8 +28,6 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@fontsource/abeezee": "^5.1.0",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "astro": "^5.1.1",
     "typescript": "^5.7.2"
   },

@@ -1,29 +1,15 @@
 ---
+import GitHub from '../assets/icons/github.svg';
+import GitLab from '../assets/icons/gitlab.svg';
+import LinkedIn from '../assets/icons/linkedin.svg';
+import StackOverflow from '../assets/icons/stackoverflow.svg';
+import Telegram from '../assets/icons/telegram.svg';
+import X from '../assets/icons/x.svg';
+
 import "@fontsource/abeezee";
 ---
 
 <script>
-  import { library, dom } from "@fortawesome/fontawesome-svg-core";
-  import {
-    faGithub,
-    faGitlab,
-    faLinkedin,
-    faStackOverflow,
-    faTelegram,
-    faXTwitter,
-  } from "@fortawesome/free-brands-svg-icons";
-
-  library.add(
-    faGithub,
-    faGitlab,
-    faLinkedin,
-    faStackOverflow,
-    faTelegram,
-    faXTwitter,
-  );
-
-  dom.i2svg();
-
   let bottom = document.getElementById("bottom");
 
   let yearSpan = document.getElementById("year");
@@ -80,32 +66,44 @@ import "@fontsource/abeezee";
             title="GitHub"
             target="_blank"
             href="https://github.com/alissonlauffer"
-            ><i class="fab fa-github"></i></a
           >
+            <GitHub width={28} height={28} />
+          </a>
           <a
             title="GitLab"
             target="_blank"
             href="https://gitlab.com/alissonlauffer"
-            ><i class="fab fa-gitlab"></i></a
           >
+            <GitLab width={28} height={28} />
+          </a>
           <a
             title="LinkedIn"
             target="_blank"
             href="https://www.linkedin.com/in/alissonlauffer/"
-            ><i class="fab fa-linkedin"></i></a
           >
+            <LinkedIn width={28} height={28} />
+          </a>
           <a
             title="Stack Overflow"
             target="_blank"
             href="https://stackoverflow.com/users/9728342/alisson-lauffer"
-            ><i class="fab fa-stack-overflow"></i></a
           >
-          <a title="Telegram" target="_blank" href="https://t.me/alissonlauffer"
-            ><i class="fab fa-telegram"></i></a
+            <StackOverflow width={28} height={28} />
+          </a>
+          <a
+            title="Telegram"
+            target="_blank"
+            href="https://t.me/alissonlauffer"
           >
-          <a title="X" target="_blank" href="https://x.com/alissonlauffer"
-            ><i class="fab fa-x-twitter"></i></a
+            <Telegram width={28} height={28} />
+          </a>
+          <a
+            title="X"
+            target="_blank"
+            href="https://x.com/alissonlauffer"
           >
+            <X width={28} height={28} />
+          </a>
         </p>
       </div>
     </section>
@@ -165,11 +163,15 @@ import "@fontsource/abeezee";
     margin-bottom: 20px;
   }
 
-  .social-networks > * {
-    font-size: 1.75em;
+  .social-networks a {
     text-decoration-line: none;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .social-networks :global(svg) {
+    fill: currentColor;
   }
 
   a {
